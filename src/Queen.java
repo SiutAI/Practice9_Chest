@@ -10,7 +10,7 @@ public class Queen extends ChessPiece{
 
     @Override
     public boolean canMoveToPosition(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
-        if (checkOnBoard(toColumn) && checkOnBoard(toLine)) {
+        if (chessBoard.checkPos(toColumn) && chessBoard.checkPos(toLine)) {
             if (toColumn == column || toLine == line) {
                 return (toLine != line) || (toColumn != column);
             } else {

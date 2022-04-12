@@ -12,7 +12,4 @@ public abstract class ChessPiece {
 
     public abstract String getSymbol();
 
-    protected boolean checkOnBoard(int pos) {
-        return pos >= 0 && pos <= 7;
-    }
 }
